@@ -10,7 +10,7 @@
 
 **PROJECT AIM:** To provide a free online CBT practice centre for Prospective Secondary School Leavers which uses minimal data.
 
-**DEPLOYMENT:** PWA =\&gt; Web
+**DEPLOYMENT:** PWA => Web
 
 **PROJECT EDGE-CASES:**
 
@@ -20,15 +20,13 @@
 
 **TECHNOLOGIES:**
 
-GatsbyJs =\&gt; Generate React PWA: Front-End UI,
+GatsbyJs => Generate React PWA: Front-End UI,
 
-Redux =\&gt; State management,
+Redux => State management,
 
-Workbox =\&gt; PWA,
+Test => Mocha
 
-Test =\&gt; Mocha
-
-_Express-Node =\&gt; Server to save user points and create a leaderboard_
+_Express-Node => Server to save user points and create a leaderboard_
 
 **FRAMEWORKS:** Bootstrap or Material UI
 
