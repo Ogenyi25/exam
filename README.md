@@ -36,7 +36,7 @@ Dev: Heroku
 
 Production:
 
-**COLLABORATION RULES:**
+**CONTRIBUTING RULES:**
 
 Upstream Branch: dev
 
