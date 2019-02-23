@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Facebook Dev C Exams`,
+    title: `Exams`,
     description: `Free Online CBT Practice for Students`,
     author: `@facebookDevC`,
   },
