@@ -33,7 +33,7 @@ class OutlinedTextFields extends React.Component {
     const { classes } = this.props
 
     return (
-      <div className="login bounceIn">
+      <div className="login">
         <div>Sign in to {config.siteTitle}</div>
         <form>
           <div>

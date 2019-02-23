@@ -25,7 +25,7 @@ function SimpleCard(props) {
   const { classes } = props
 
   return (
-    <div className="login-text-container bounceIn">
+    <div className="login-text-container">
       <CardContent>
         <Typography variant="h5" component="h2">
           Welcome Back
