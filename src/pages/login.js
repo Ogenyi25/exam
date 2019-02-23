@@ -10,7 +10,7 @@ import SEO from "../containers/seo"
 const IndexPage = () => (
   <Layout>
     <div className="login-image-container">
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Login" keywords={[`gatsby`, `application`, `react`]} />
       <div className="login-container bounceIn">
         <LoginText />
         <Login />
