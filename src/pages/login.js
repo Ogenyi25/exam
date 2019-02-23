@@ -1,16 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+import Login from "../components/login"
+import LoginText from "../components/loginText"
+import "../styles/login.css"
+import "../styles/animations.css"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../containers/layout"
+import SEO from "../containers/seo"
 
-const SecondPage = () => (
+const IndexPage = () => (
   <Layout>
-    <SEO title="Login" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="login-image-container">
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <div className="login-container bounceIn">
+        <LoginText />
+        <Login />
+      </div>
+    </div>
   </Layout>
 )
 
-export default SecondPage
+export default IndexPage
