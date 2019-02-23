@@ -29,19 +29,19 @@ function SimpleCard(props) {
     <div className="login-text-container">
       <CardContent>
         <Typography variant="h5" component="h2">
-          Welcome Back
+          Welcome
         </Typography>
         <Typography
           className={classes.title}
           color="textSecondary"
           gutterBottom
         >
-          Continue your journey to success
+          This is to a start of an awesome journey to greatness... Great things starts little
         </Typography>
         <div className="register-account" >
-          <h4>Don't have an account?</h4>
-          <Link to="/register" >
-            <p className="register-button" > Register </p>
+          <h4>Already have an account?</h4>
+          <Link to="/login" >
+            <p className="register-button" > Login </p>
           </Link>
         </div>
       </CardContent>
