@@ -1,7 +1,8 @@
 import React from "react"
-import Login from "../components/login"
-import LoginText from "../components/loginText"
+import Register from "../components/register"
+import RegisterText from "../components/registerText"
 import "../styles/login.css"
+import "../styles/register.css"
 import "../styles/animations.css"
 
 import Layout from "../containers/layout"
@@ -11,10 +12,10 @@ const IndexPage = () => (
   <Layout>
     <div className="login-image-container">
     <div className="layer">
-      <SEO title="Login" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Register" keywords={[`gatsby`, `application`, `react`]} />
       <div className="login-container bounceIn">
-        <LoginText />
-        <Login />
+        <Register />
+        <RegisterText />
       </div>
     </div>
     </div>
