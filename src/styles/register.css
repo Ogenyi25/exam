@@ -1,63 +1,28 @@
-.login-image-container {
-  background-image: url("../assets/imgs/background.jpg");
-  background-color: black;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.layer {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.login-container .register-text-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  opacity: 1;
-  max-width: 700px;
-  background: rgba(102, 204, 255, 0.9);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-}
-
-.login-container .login-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-}
-
-.login-container .login-text-container .register-account {
-  margin-top: 30px
-}
-
-.login-container .login-text-container .register-account .register-button {
   padding: 10px;
-  border: 2px solid goldenrod;
+  width: 300px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: goldenrod;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.login-container .register-text-container .register-account .register-button {
+  padding: 10px;
+  border: 2px solid white;
+  color: white;
   border-radius: 30px;
   cursor: pointer;
-  opacity: 0.6;
   transition: 0.9s
 }
 
-.login-container .login-text-container .register-account .register-button:hover {
+.login-container .register-text-container .register-account .register-button:hover {
   padding: 10px;
-  border: 2px solid wheat;
-  background-color: goldenrod;
-  color: white;
+  border: 2px solid white;
+  background-color: white;
+  color: goldenrod;
   opacity: 1;
   border-radius: 30px;
   cursor: pointer;
@@ -66,42 +31,19 @@
 .login-container .register {
   margin: 10px;
   width: 400px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 30px;
 }
 
 @media only screen and (max-width: 480px) {
-  .login-image-container {
-    background-image: url("../assets/imgs/background.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .login-container .register {
+    margin: 10px;
+    /* width: 300px; */
   }
 
-  .login-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    opacity: 1;
-    background: rgba(102, 204, 255, 0.9);
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .login-container .login-text-container {
+  .login-container .register-text-container {
     display: none;
     background-color: transparent;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  }
-
-  .login-container .register {
-    margin: 10px;
-    width: 300px;
   }
 }

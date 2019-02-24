@@ -8,6 +8,18 @@
  * Copyright (c) 2018 Daniel Eden
  */
 
+.bounce-in-left {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  animation-name: bounceInLeft;
+}
+
+.bounce-in-right {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  animation-name: bounceInRight;
+}
+
 @-webkit-keyframes bounce {
   from,
   20%,
@@ -820,8 +832,6 @@
 }
 
 .bounceIn {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
