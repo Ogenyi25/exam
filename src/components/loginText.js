@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from 'gatsby'
 import { withStyles } from "@material-ui/core/styles"
 import CardContent from "@material-ui/core/CardContent"
-import Typography from "@material-ui/core/Typography"
 
 const styles = {
   card: {
@@ -23,21 +22,15 @@ const styles = {
 }
 
 function SimpleCard(props) {
-  const { classes } = props
-
   return (
     <div className="login-text-container">
       <CardContent>
-        <Typography variant="h5" component="h2">
+        <h2>
           Welcome Back
-        </Typography>
-        <Typography
-          className={classes.title}
-          color="textSecondary"
-          gutterBottom
-        >
+        </h2>
+        <p>
           Continue your journey to success
-        </Typography>
+        </p>
         <div className="register-account" >
           <h4>Don't have an account?</h4>
           <Link to="/register" >

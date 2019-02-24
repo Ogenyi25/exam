@@ -12,7 +12,7 @@ const IndexPage = () => (
     <div className="login-image-container">
     <div className="layer">
       <SEO title="Login" keywords={[`gatsby`, `application`, `react`]} />
-      <div className="login-container bounceIn">
+      <div className="login-container bounce-in-left">
         <LoginText />
         <Login />
       </div>

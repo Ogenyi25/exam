@@ -13,6 +13,11 @@ const styles = theme => ({
   dense: {
     marginTop: 16,
   },
+  button: {
+    paddingRight: 20,
+    paddingLeft: 20,
+    marginTop: 20,
+  }
 })
 
 class OutlinedTextFields extends React.Component {
@@ -34,8 +39,8 @@ class OutlinedTextFields extends React.Component {
 
     return (
       <div className="login">
-        <div>Sign in to {config.siteTitle}</div>
         <form>
+          <div>Sign in to {config.siteTitle}</div>
           <div>
             <TextField
               required
@@ -55,6 +60,7 @@ class OutlinedTextFields extends React.Component {
               id="outlined-required"
               label="Password"
               fullWidth
+              type="password"
               placeholder="password"
               className={classes.textField}
               onChange={this.handleChange("password")}

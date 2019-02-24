@@ -8,7 +8,7 @@
 }
 
 .layer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   top: 0;
   left: 0;
@@ -26,18 +26,20 @@
   text-align: center;
   opacity: 1;
   max-width: 700px;
-  background: rgba(102, 204, 255, 0.9);
-  padding: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
 .login-container .login-text-container {
   display: flex;
+  padding: 40px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: goldenrod;
+  color: white;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
 }
 
 .login-container .login-text-container .register-account {
@@ -46,18 +48,20 @@
 
 .login-container .login-text-container .register-account .register-button {
   padding: 10px;
-  border: 2px solid goldenrod;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: 0.9s
 }
 
 .login-container .login-text-container .register-account .register-button:hover {
   padding: 10px;
-  border: 2px solid wheat;
-  background-color: goldenrod;
-  color: white;
+  border: 2px solid white;
+  background-color: white;
+  color: goldenrod;
   opacity: 1;
   border-radius: 30px;
   cursor: pointer;
@@ -66,7 +70,10 @@
 .login-container .login {
   margin: 10px;
   width: 400px;
-  padding: 20px;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -83,7 +90,7 @@
     flex-direction: row;
     text-align: center;
     opacity: 1;
-    background: rgba(102, 204, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 10px;
     position: absolute;

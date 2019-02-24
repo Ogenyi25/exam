@@ -13,6 +13,11 @@ const styles = theme => ({
   dense: {
     marginTop: 16,
   },
+  button: {
+    paddingRight: 20,
+    paddingLeft: 20,
+    marginTop: 20,
+  }
 })
 
 class OutlinedTextFields extends React.Component {
@@ -34,7 +39,7 @@ class OutlinedTextFields extends React.Component {
 
     return (
       <div className="register">
-        <div>Sign in to {config.siteTitle}</div>
+        <div>Sign up to {config.siteTitle}</div>
         <form>
         <div>
             <TextField
@@ -96,7 +101,7 @@ class OutlinedTextFields extends React.Component {
               className={classes.button}
               type="submit"
             >
-              Login
+              Sign Up
             </Button>
           </div>
         </form>
