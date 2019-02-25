@@ -1,7 +1,7 @@
 .login-container .register-text-container {
-  display: flex;
   padding: 10px;
   width: 300px;
+  display: flex;
   border-radius: 0px 20px 20px 0px;
   background-color: goldenrod;
   justify-content: center;

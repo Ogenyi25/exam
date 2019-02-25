@@ -8,10 +8,6 @@ const Layout = ({ children }) => (
     <div className="main-content">
       {children}
     </div>
-    <footer className="footer">
-      © {new Date().getFullYear()}, Built with ❤️ by{" "}
-       <a href="https://github.com/DevCAbuja">Facebook DevC Abuja</a>
-    </footer>
   </>
 )
 
