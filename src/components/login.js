@@ -1,26 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { withStyles } from "@material-ui/core/styles"
-import TextField from "@material-ui/core/TextField"
-import Button from "@material-ui/core/Button"
+import React, { Component } from "react"
+import { Input, Button } from "semantic-ui-react"
+
 import config from "../config"
 
-const styles = theme => ({
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-  },
-  dense: {
-    marginTop: 16,
-  },
-  button: {
-    paddingRight: 20,
-    paddingLeft: 20,
-    marginTop: 20,
-  }
-})
-
-class OutlinedTextFields extends React.Component {
+class LoginComponent extends Component {
   state = {
     name: "",
     age: "",
@@ -35,56 +18,49 @@ class OutlinedTextFields extends React.Component {
   }
 
   render() {
-    const { classes } = this.props
-
     return (
       <div className="login">
+      <div>
         <form>
-          <div>Sign in to {config.siteTitle}</div>
           <div>
-            <TextField
+            Sign in to <strong>{config.siteTitle}</strong>.com
+          </div>
+          <div>
+            <Input
+              icon="users"
+              iconPosition="left"
+              placeholder="Username"
               required
-              id="outlined-name"
-              label="Username"
-              className={classes.textField}
-              value={this.state.name}
-              fullWidth
-              onChange={this.handleChange("name")}
-              margin="normal"
-              variant="outlined"
+              className="auth-input"
             />
           </div>
           <div>
-            <TextField
+            <Input
+              icon="key"
+              iconPosition="left"
+              placeholder="Password"
               required
-              id="outlined-required"
-              label="Password"
-              fullWidth
               type="password"
-              placeholder="password"
-              className={classes.textField}
-              onChange={this.handleChange("password")}
-              margin="normal"
-              variant="outlined"
+              className="auth-input"
             />
           </div>
           <div>
             <Button
-              variant="contained"
-              className={classes.button}
-              type="submit"
-            >
-              Login
-            </Button>
+              // basic
+              color="yellow"
+              content="Sign In"
+              icon="sign-in"
+            />
           </div>
         </form>
+        <footer className="auth-footer">
+          © {new Date().getFullYear()}, Built with ❤️ by{" "}
+          <a href="https://github.com/DevCAbuja">Facebook DevC Abuja</a>
+        </footer>
+      </div>
       </div>
     )
   }
 }
 
-OutlinedTextFields.propTypes = {
-  classes: PropTypes.object.isRequired,
-}
-
-export default withStyles(styles)(OutlinedTextFields)
+export default LoginComponent
