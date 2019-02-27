@@ -1,20 +1,11 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from 'gatsby'
-import { withStyles } from "@material-ui/core/styles"
-import CardContent from "@material-ui/core/CardContent"
 
-const styles = {
-  card: {
-    minWidth: 275,
-  },
-}
 
-function SimpleCard(props) {
-
+function RegisterText(props) {
   return (
     <div className="register-text-container">
-      <CardContent>
+      <div>
         <h2>
           Welcome
         </h2>
@@ -27,13 +18,10 @@ function SimpleCard(props) {
             <p className="register-button" > Login </p>
           </Link>
         </div>
-      </CardContent>
+      </div>
     </div>
   )
 }
 
-SimpleCard.propTypes = {
-  classes: PropTypes.object.isRequired,
-}
+export default RegisterText
 
-export default withStyles(styles)(SimpleCard)

@@ -1,26 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { withStyles } from "@material-ui/core/styles"
-import TextField from "@material-ui/core/TextField"
-import Button from "@material-ui/core/Button"
+import React, { Component } from "react"
+import { Input, Button } from "semantic-ui-react"
+
 import config from "../config"
 
-const styles = theme => ({
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-  },
-  dense: {
-    marginTop: 16,
-  },
-  button: {
-    paddingRight: 20,
-    paddingLeft: 20,
-    marginTop: 20,
-  }
-})
-
-class OutlinedTextFields extends React.Component {
+class RegisterComponent extends Component {
   state = {
     name: "",
     age: "",
@@ -35,83 +18,65 @@ class OutlinedTextFields extends React.Component {
   }
 
   render() {
-    const { classes } = this.props
-
     return (
-      <div className="register">
-        <div>Sign up to {config.siteTitle}</div>
+      <div className="login">
+      <div>
         <form>
-        <div>
-            <TextField
+          <div>Join us at {config.siteTitle}.com</div>
+          <div>
+            <Input
+              icon="user"
+              iconPosition="left"
+              placeholder="Full Name"
               required
-              id="outlined-name"
-              label="Full Name"
-              className={classes.textField}
-              value={this.state.name}
-              fullWidth
-              onChange={this.handleChange("name")}
-              margin="normal"
-              variant="outlined"
+              className="auth-input"
             />
           </div>
           <div>
-            <TextField
+            <Input
+              icon="user"
+              iconPosition="left"
+              placeholder="Username"
               required
-              id="outlined-username"
-              label="Username"
-              className={classes.textField}
-              value={this.state.name}
-              fullWidth
-              onChange={this.handleChange("name")}
-              margin="normal"
-              variant="outlined"
+              className="auth-input"
             />
           </div>
           <div>
-            <TextField
+            <Input
+              icon="mail"
+              iconPosition="left"
+              placeholder="Email"
               required
-              id="outlined-email"
-              label="Email Address"
-              type="email"
-              className={classes.textField}
-              value={this.state.name}
-              fullWidth
-              onChange={this.handleChange("name")}
-              margin="normal"
-              variant="outlined"
+              className="auth-input"
             />
           </div>
           <div>
-            <TextField
+            <Input
+              icon="key"
+              iconPosition="left"
+              placeholder="Username"
               required
-              id="outlined-password"
-              label="Password"
               type="password"
-              fullWidth
-              placeholder="password"
-              className={classes.textField}
-              onChange={this.handleChange("password")}
-              margin="normal"
-              variant="outlined"
+              className="auth-input"
             />
           </div>
           <div>
             <Button
-              variant="contained"
-              className={classes.button}
-              type="submit"
-            >
-              Sign Up
-            </Button>
+              // basic
+              color="yellow"
+              content="Join Us"
+              icon="signup"
+            />
           </div>
         </form>
+        <footer className="auth-footer">
+          © {new Date().getFullYear()}, Built with ❤️ by{" "}
+          <a href="https://github.com/DevCAbuja">Facebook DevC Abuja</a>
+        </footer>
+      </div>
       </div>
     )
   }
 }
 
-OutlinedTextFields.propTypes = {
-  classes: PropTypes.object.isRequired,
-}
-
-export default withStyles(styles)(OutlinedTextFields)
+export default RegisterComponent

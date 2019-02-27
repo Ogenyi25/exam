@@ -626,21 +626,8 @@ pre tt:after {
   }
 }
 
-.footer {
-  height: 40px;
-  text-align: right;
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.4);
-  color: white
-}
-
-.footer a {
-  color: cornflowerblue
-}
-
 .main-content {
   min-height: 100%;
-  margin-bottom: -40px;
 }
 
 #___gatsby div[tabindex="-1"] {
