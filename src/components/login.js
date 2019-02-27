@@ -27,7 +27,7 @@ class LoginComponent extends Component {
           </div>
           <div>
             <Input
-              icon="users"
+              icon="user"
               iconPosition="left"
               placeholder="Username"
               required

@@ -25,7 +25,7 @@ class RegisterComponent extends Component {
           <div>Join us at {config.siteTitle}.com</div>
           <div>
             <Input
-              icon="user"
+              icon="users"
               iconPosition="left"
               placeholder="Full Name"
               required
